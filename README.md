@@ -1,7 +1,7 @@
 Trie implemetnation in C
 ========================
 
-This a simple implementation of (trie)[http://en.wikipedia.org/wiki/Trie]
+This a simple implementation of [trie](http://en.wikipedia.org/wiki/Trie)
 data structure in C99.  This implementation allows to store sequences of
 `int`-s, however one can easy trigger type of `symb` in `struct trie`.
 
