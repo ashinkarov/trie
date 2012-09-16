@@ -1,9 +1,9 @@
-Trie implemetnation in C
+Generic trie implemetnation in C
 ========================
 
 This a simple implementation of [trie](http://en.wikipedia.org/wiki/Trie)
 data structure in C99.  This implementation allows to store sequences of
-`int`-s, however one can easy trigger type of `symb` in `struct trie`.
+`int`-s, however one can easy trigger a type of `symb` in `struct trie`.
 
 The library includes a simple test-case in the trie.c.  In order to make
 it work, run `make test`.
@@ -11,9 +11,9 @@ it work, run `make test`.
 Usage
 -----
 
-Currently implemetation allows you to store `char` based strings in the
-trie, attaching to each word some information using `ssize_t` type.  For
-example, consider the following usage:
+Currently an implemetation provides interfaces to store `char` based strings in the
+trie, attaching to each word some information of `ssize_t` type.  For
+example, consider the following case:
 
 ```C
 #include <stdio.h>
@@ -69,7 +69,7 @@ As the type of information you attach is a transparent `size_t` we need
 to dedicate one symbol, whic would denote that a certain symbol is _not_
 last.  Macro `TRIE_NOT_LAST` serves this purpose.
 
-Tha implementation is valgrinded, and is compiled with strictes gcc warning
+Tha implementation is valgrinded, and is compiled at strictes gcc warning
 level.
 
 Send your suggestions or patches.
